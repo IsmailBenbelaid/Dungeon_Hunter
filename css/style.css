@@ -1,0 +1,196 @@
+/*--Main Elements----------------------------------------------------------------------------------------------------------------------------------*/
+body {
+  background-color: rgb(253, 253, 253);
+  color: rgb(37, 37, 37);
+  font-family: "Arial";
+  user-select: none;
+  overflow: hidden;
+}
+.game-holder {
+  transform: translateX(-50%);
+  width: calc(50vh * 1.67);
+  position: absolute;
+  height: 100vh;
+  left: 50%;
+  top: 0px;
+}
+input[type="button"] {
+  cursor: pointer;
+}
+
+/*--Game Head--------------------------------------------------------------------------------------------------------------------------------------*/
+.game-head {
+  position: absolute;
+  height: 15vh;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+}
+.game-head-row {
+  justify-content: center;
+  align-items: center;
+  font-size: 6vh;
+  display: flex;
+  height: 50%;
+  width: 100%;
+}
+
+/*--sante Bar-------------------------------------------------------------------------------------------------------------------------------------*/
+.heath-bar-holder {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  width: 70%;
+}
+.sante-bar {
+  background-color: rgb(35, 35, 35);
+  border: 1px solid rgb(20, 20, 20);
+  height: 4vh;
+  width: 55vh;
+}
+.bar {
+  background-color: rgb(0, 100, 0);
+  height: 4vh;
+  width: 55vh;
+}
+.sante-value {
+  justify-content: center;
+  top: calc(9vh + 2px);
+  align-items: center;
+  position: absolute;
+  font-size: 3vh;
+  display: flex;
+  height: 4vh;
+  width: 8vh;
+  left: 24vh;
+  color: rgb(214, 212, 212);
+}
+
+/*--Score------------------------------------------------------------------------------------------------------------------------------------------*/
+.score-holder {
+  font-size: 4vh;
+  display: flex;
+  height: 100%;
+  width: 30%;
+}
+.score-text {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  width: 50%;
+}
+.score-value {
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  display: flex;
+  height: 100%;
+  width: 50%;
+}
+
+/*--Game Body--------------------------------------------------------------------------------------------------------------------------------------*/
+.game-body {
+  position: absolute;
+  height: 50vh;
+  width: 100%;
+  left: 0px;
+  top: 15vh;
+}
+.game-canvas {
+  background-color: rgb(140, 130, 100);
+  border: 1px solid rgb(20, 20, 20);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+/*--Game Foot--------------------------------------------------------------------------------------------------------------------------------------*/
+.game-foot {
+  position: absolute;
+  display: flex;
+  height: 35vh;
+  width: 100%;
+  left: 0px;
+  top: 65vh;
+}
+.game-foot-side {
+  height: 100%;
+  width: 50%;
+}
+
+#bouton-haut {
+  left: calc(50% - 3vh);
+  position: absolute;
+  height: 5vh;
+  width: 5vh;
+  top: 5vh;
+}
+#bouton-bas {
+  left: calc(50% - 3vh);
+  position: absolute;
+  height: 5vh;
+  width: 5vh;
+  top: 11vh;
+}
+#bouton-gauche {
+  left: calc(50% - 9vh);
+  position: absolute;
+  height: 5vh;
+  width: 5vh;
+  top: 11vh;
+}
+#bouton-droite {
+  left: calc(50% + 3vh);
+  position: absolute;
+  height: 5vh;
+  width: 5vh;
+  top: 11vh;
+}
+#quitter-dungeon {
+  left: calc(50% - 9vh);
+  position: absolute;
+  height: 5vh;
+  width: 17vh;
+  top: 18vh;
+}
+
+/*--Game Over--------------------------------------------------------------------------------------------------------------------------------------*/
+.banniere-termine {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  display: none;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+}
+.termine-fenetre {
+  background-color: rgb(196, 196, 196);
+  border: 1px solid rgb(20, 20, 20);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  height: 15vh;
+  width: 30vh;
+  left: 50%;
+  top: 50%;
+}
+.fin {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 33%;
+  width: 100%;
+}
+
+#fin-titre {
+  font-size: 4vh;
+}
+#fin-score {
+  font-size: 2.5vh;
+}
+#reset-game {
+  height: 3vh;
+  width: 10vh;
+}
